@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container"> 
+        <div class="titleContainer">
+            <h1>TO-DO-LIST</h1>
+        </div>
+        <div class="inputContainer">
+            <input type="text" id="taskInput" placeholder="Enter Your Taks"/>
+            <button  onclick="addItem()" id="addBtn"> ADD</button>
+            
+        </div>
+
+        <div class="filter">
+            <div class="filterDate">
+                <div>Start Date <input type="date" id="startDate"></div>
+                <div style="margin-left : 2vw">End Date <input type="date" id="endDate"></div>
+                <div  class="filterDateBtn" onclick="filterDateBtnClicked()">Filter by Date</div>
+            </div>
+            <br/>
+            <div class="filterPriority">
+                <select name="cars" id="priorityDropDown">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <div class="filterPriorityBtn" onclick="filterPriorityBtnClicked()">Filter by Priority</div>
+            </div>
+            <br/>
+            
+
+
+            <div class="categoryFilter">
+                <input type="text" id="categoryFilterInput" placeholder="Enter category">
+                <div class="categoryFilterBtn" id="categoryFilterBtn" onclick="categoryFilterClicked()" > Filter by Category</div>
+            </div>
+            <br>
+
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Enter search word">
+                <div class="searchBtn" id="searchBtn" onclick="search()" > Search</div>
+            </div>
+            <br>
+
+            <!-- <div class="categoryFilter">
+                <input type="text" id="categoryFilterInput" placeholder="Enter category">
+                <div class="categoryFilterBtn" id="categoryFilterBtn" onclick="categoryFilterClicked()" > Filter by Category</div>
+            </div>
+            <br> -->
+
+            <div class="dateSorting"  onclick="dateSorting()" >Sort by Date</div><br>
+            <div class="prioritySorting"  onclick="prioritySorting()" >Sort by Priority</div><br>
+
+            <div style="display: flex; margin-top: 4px">
+                <input type="date" id="backlogDate">
+                <div class="viewBacklogs"  onclick="viewBacklogs()" > View Backlogs by Date</div>
+            </div><br>
+
+            <div class="activityLogs"  onclick="activityLogs()" >Show activiy logs</div>
+            
+            <br>
+            <div class="removeAllFilters" onclick="removeAllFilters()">
+                Remove all filters
+            </div>
+        </div>
+        
+        <div class="listContainer">
+            <ul id="itemsList" class="itemsLists">
+
+            </ul>
+        </div>
+        
+    </div>
+
+
+
+    <audio id="myAudio">
+        <source src="./resources/ring1.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

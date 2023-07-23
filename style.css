@@ -1,0 +1,359 @@
+.container{
+    background-color: #faafaf;
+    border : 2px solid black;
+    text-align: center;
+    width : 70%;
+    justify-content: center;
+    margin : 2% auto;
+    border-radius: 8px;;
+}
+
+.titleContainer{
+    background-color: #ee3425;
+    margin-bottom : 2%;
+    color : white;
+    height : 100px;
+    line-height: 100px;
+    border-radius : 8px;
+    margin-top : -21.5px;
+    font-size : 20px;
+    margin-top : -2.5vw;
+    font-size : 2vw;
+    
+}
+
+.inputContainer{
+    margin : 4% 0;
+
+}
+.dateBtn{
+    background-color: aqua;
+}
+
+
+.filter{
+    padding : 5px 5px;
+    border : 2px solid black;
+    text-align: left;
+    margin: 5px 5%;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+.filterDate, .filterPriority{
+    display: flex;
+    font-size : 1vw;
+}
+
+.filterDateBtn, .filterPriorityBtn{
+    background-color: #ee3425;
+    border-radius: 5px;
+    margin-left : 5px;
+    padding : 2px 5px;
+    cursor: pointer;
+    margin-left : 2vw;
+    width : 6vw;
+    height : 1.2vw;
+    font-size : 1vw;
+    color : white
+}
+
+.filterDateBtn{
+    border-radius : 0;
+}
+.filterPriorityBtn{
+    margin-left : -4px;
+    border-radius: 0;
+    color : white
+}
+
+.filterPriorityBtn{
+    width : 8vw;
+    font-size : 1vw;
+}
+
+
+#taskInput{
+    width : 50%;
+    height : 40px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    font-size : 1vw;
+}
+
+#addBtn{
+    width : 10%;
+    height : 40px;
+    background-color: #ee3425;
+    border-radius: 5px;
+    border : none;
+    font-size : 1vw;
+    cursor: pointer;
+}
+
+#itemsList{
+    list-style-type: none;
+}
+
+
+
+.item{
+    background-color: rgb(245, 121, 121);
+    display: grid;
+    grid-template-columns: 0.8fr 50px 50px 50px 50px 50px;
+    margin : 5px 5% 5px 0;
+    height : 3.5vw;
+    border-radius: 10px;
+    line-height: 3.5vw;
+    font-size : 1vw;
+    text-align: left;
+    padding-left : 1vw;
+    align-items: center;
+    margin-top : 30px;
+}
+
+.editDiv{
+    background-color: rgb(245, 121, 121);
+    display: grid;
+    grid-template-columns: 0.8fr 50px 50px 50px 50px 50px;
+    margin : 5px 5% 5px 0;
+    height : 3.5vw;
+    border-radius: 10px;
+    line-height: 3.5vw;
+    text-align: left;
+    padding-left : 1vw;
+    align-items: center;
+    margin-top : 30px
+}
+
+.saveBtn{
+    background-color: cyan;
+    border-radius: 10px;
+    border : none;
+    width : 3.5vw;
+    margin-left : 5.5vw;
+    height : 2.5vw;
+    font-size : 1vw;
+}
+
+
+.dropdown{
+    border : none;
+    border-radius: 5px;
+    height : 2.5vw;
+    width : 3.4vw;
+    font-size : 0.9vw;
+    /* margin-top : 0.5vw; */
+}
+.dueDate{
+    width : 6vw;
+    font-size : 0.8vw;
+    border-radius: 5px;
+    border : none;
+    margin-left : 8px;
+    height : 2.5vw;
+    width : 6vw;
+    /* margin-top : 0.5vw; */
+}
+
+.doneBtn{
+    /* margin-right : 20vw; */
+    border-radius: 5px;
+    width : 5vw;
+    border : none;
+    margin-left : 3.6vw;
+    height : 2.5vw;
+    font-size : 1vw;
+
+}
+
+.editBtn{
+    background-color: green;
+    border-radius: 10px;
+    border : none;
+    font-size : 1vw;
+    width : 3.5vw;
+    margin-left : 5.6vw;
+    height : 2.5vw;
+    font-size : 1vw;
+}
+
+.deleteBtn{
+    background-color: #ee3425;
+    border-radius: 10px;
+    width : 4vw;
+    border : none;
+    font-size : 1vw;
+    margin-left : 5.99vw;
+    height : 2.5vw;
+    font-size : 1vw;
+}
+
+
+.editItem{
+    margin-left : -0.8vw;
+    width : 50%;
+    height : 3vw;
+    border-radius: 10px;
+    border : none;
+    text-align: center;
+    background-color: #faafaf;
+    text-align: left;
+    padding-left : 1vw;
+    font-size : 1vw;
+    /* align-items: center; */
+}
+
+
+.removeAllFilters, .dateSorting, .prioritySorting, .viewBacklogs, .activityLogs, .categoryFilterBtn{
+    background-color: #ee3425;
+    color : white;
+    width : fit-content;
+    /* border-radius: 5px; */
+    padding : 2px 5px;
+    /* text-align: center; */
+    cursor: pointer;
+    margin-top : 4px;
+    height : 1.4vw;
+    font-size : 1vw;
+}
+
+.categoryFilter{
+    display: flex;
+    margin-top : 4px;
+}
+#categoryFilterInput{
+    font-size : 1vw;
+    height : 1.5vw;
+    width : 8vw;
+    margin-top : 2px;
+}
+.categoryFilterBtn{
+    height : 1.5vw;
+    width : 8vw;
+    background-color :#ee3425;
+    color : white;
+    font-size : 1vw;
+    /* margin-left : 0.2vw; */
+
+}
+.subTask{
+    display: grid;
+    grid-template-columns: 8vw 7vw 0.94fr;
+    /* border : 2px solid blue; */
+    height : 2vw;
+    align-items: center;
+}
+
+.subTaskInput{
+    /* width : 2vw; */
+    /* border : 2px solid green */
+    height : 1.8vw;
+}
+
+.subTaskInputBtn{
+    /* background-color: blue; */
+    height : 2.2vw;
+    font-size : 0.8vw;
+}
+
+.subTaskUl{
+    list-style-type: none;
+    display: flex;
+    /* border : 2px solid  black; */
+    /* width: 100%; */
+    height : 2vw;
+}
+
+.subTaskli{
+    background-color: white;
+    padding : 2px 5px;
+    margin : 0 2px;
+    height : 1vw;
+    margin-top : 5px;
+    font-size : 1vw;
+}
+
+#startDate, #endDate{
+    font-size : 1vw;
+    height : 1vw;
+    width : 6vw;
+}
+
+
+#priorityDropDown{
+    height : 1.5vw;
+    font-size : 1vw;
+}
+
+#backlogDate{
+    width : 6vw;
+    height : 1.5vw;
+    margin-top : 3px;
+    font-size : 1vw;
+}
+
+.remainderInput{
+    font-size : 0.7vw;
+}
+
+
+.mainDiv{
+    border : 2px solid black;
+    margin-top : 50px;
+    padding : 10px 5px;
+    padding-top : -5%;
+    margin-right : 5%;
+    margin-left : 1%;
+}
+
+
+.mainDiv.dragging :where(.item, .divSub){
+    background-color: green;
+    opacity: 0;
+}
+
+.search{
+    display:  flex;
+}
+
+.searchBtn{
+    background-color:#ee3425;
+    color : white;
+    width : 5vw;
+    text-align: center;
+    font-size : 1vw;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+     .item, .editDiv{
+        display: grid;
+        grid-template-columns: 1fr repeat(5, 0.2fr) ;
+     }
+  }
