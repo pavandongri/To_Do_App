@@ -1,40 +1,14 @@
 
-let tasks = [];
-let filteredTasks = [];
-let activityLog = [];
+var tasks = [];
+var filteredTasks = [];
+var activityLog = [];
 
 
 window.onload = (event) => {
     let s = localStorage.getItem("key")
-    tasks = JSON.parse(s)
-    filteredTasks = tasks;
-    // console.log(filteredTasks)
-    // fetch('https://jsonplaceholder.typicode.com/todos')
-    // .then((response) => { 
-    //     if (!response.ok) { 
-    //         throw new Error('Network response was not OK'); 
-    //     } 
-    //     return response.json(); 
-    // }) 
-    // .then((data) => { 
-    //     let f = tasks.length ;
-    //     // console.log(data.length)
-    //     for(let i=0; i<data.length && !f; i++){
-    //         tasks.push({
-    //             id : data[i].id ,
-    //             task : data[i].title,
-    //             edit : 0,
-    //             done : 0,
-    //             dueDate : '',
-    //             priority : 'high'
-    //         })
-    //     }
-    //     retrieveData();
-    // })
-    // .catch(error => { 
-    //     retrieveData();
-    //     console.log('Error:', error.message); 
-    // });
+    tasks = JSON.parse(s) || []
+    filteredTasks = tasks || []
+    console.log(filteredTasks)
     retrieveData();
 };
 
@@ -47,7 +21,8 @@ function addItem(){
     if(str.length > 80){
         str = str.substring(0, 50) + '...';
     }
-    tasks.push({'id':new Date().valueOf(), 
+    tasks.push({
+        'id': new Date().valueOf(),
         'task' : str,
         'edit' : 0,
         'done' : 0,
@@ -58,20 +33,6 @@ function addItem(){
         'tag' : []
         
     });
-    activityLog.push(
-        {'event' : 'item added', 
-        'item' : {'id':new Date().valueOf(), 
-                    'task' : str,
-                    'edit' : 0,
-                    'done' : 0,
-                    'dueDate' : '',
-                    'priority' : 'high',
-                    'subTask' : [],
-                    'category' : [],
-                    'tag' : []
-                }
-        }
-    )
     saveDataToLocal();
 }
 

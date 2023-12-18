@@ -101,7 +101,7 @@
     background-color: rgb(245, 121, 121);
     display: grid;
     grid-template-columns: 0.8fr 50px 50px 50px 50px 50px;
-    margin : 5px 5% 5px 0;
+    margin : 5px 0 5px 0;
     height : 3.5vw;
     border-radius: 10px;
     line-height: 3.5vw;
@@ -150,7 +150,7 @@
     font-size : 0.8vw;
     border-radius: 5px;
     border : none;
-    margin-left : 8px;
+    margin-left : 15px;
     height : 2.5vw;
     width : 6vw;
     /* margin-top : 0.5vw; */
@@ -161,7 +161,7 @@
     border-radius: 5px;
     width : 5vw;
     border : none;
-    margin-left : 3.6vw;
+    margin-left : 4.3vw;
     height : 2.5vw;
     font-size : 1vw;
 
@@ -173,7 +173,7 @@
     border : none;
     font-size : 1vw;
     width : 3.5vw;
-    margin-left : 5.6vw;
+    margin-left : 6.8vw;
     height : 2.5vw;
     font-size : 1vw;
 }
@@ -184,7 +184,7 @@
     width : 4vw;
     border : none;
     font-size : 1vw;
-    margin-left : 5.99vw;
+    margin-left : 7.7vw;
     height : 2.5vw;
     font-size : 1vw;
 }
